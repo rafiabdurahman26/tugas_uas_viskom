@@ -21,4 +21,8 @@ tugas uas/
 ├
 ├── requirements.txt
 
-
+Library dan Tools
+Python 3.x
+OpenCV (opencv-contrib-python)
+NumPy
+Matplotlib
