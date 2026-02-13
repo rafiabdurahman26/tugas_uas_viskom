@@ -31,16 +31,12 @@ plt.title("Keypoints Image 2")
 plt.imshow(img_kp2, cmap='gray')
 plt.show()
 
-# === FEATURE MATCHING (AMAN) ===
 bf = cv2.BFMatcher(cv2.NORM_L2, crossCheck=True)
 
-# MATCH SELALU: des1 -> des2
 matches = bf.match(des1, des2)
 
-# SORT
 matches = sorted(matches, key=lambda x: x.distance)
 
-# === VISUALISASI (URUTAN KONSISTEN) ===
 img_match = cv2.drawMatches(
     img1, kp1,
     img2, kp2,
